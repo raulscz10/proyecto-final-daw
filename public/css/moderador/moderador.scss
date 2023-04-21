@@ -1,0 +1,160 @@
+@import '../base/base.scss';
+.imgavatar {
+    width: 100px;
+    height: 100px;
+}
+
+.input-editar {
+    margin: 10px;
+}
+
+.close {
+    font-size: 40px !important;
+}
+
+.swal2-popup {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    grid-template-columns: minmax(0, 100%);
+    width: auto;
+    max-width: 100%;
+    padding: 0 0 1.25em;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #545454;
+    font-family: inherit;
+    font-size: 1.75rem !important;
+}
+
+.zonamoderador {
+    main {
+        .region {
+            width: 100%;
+            @include flex-cv($d: column);
+            .glassland {
+                @extend .glass-admin;
+                .content-glassland {
+                    //@extend .flex;
+                }
+            }
+        }
+        .region1 {
+            margin: 50px 0px 0px 0px;
+            .menu-moderador {
+                @include flex-cv($d: column);
+                .content-menu {
+                    .filtrador {
+                        margin-top: 50px;
+                        width: 50%;
+                    }
+                    .boton-menu {
+                        width: 25%;
+                        height: 40px;
+                        border-radius: 7px;
+                        border-color: rgb(0, 0, 0);
+                        background-color: rgb(22, 133, 0);
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: center;
+                        transition: all 0.5s ease;
+                        position: relative;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        outline: none;
+                    }
+                    .boton-tabla {
+                        width: 5%;
+                        height: 30px;
+                        border-radius: 7px;
+                        border-color: rgb(0, 0, 0);
+                        background-color: rgb(22, 133, 0);
+                        font-size: 10px;
+                        font-weight: 500;
+                        float: left;
+                        transition: all 0.5s ease;
+                        position: relative;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .region2 {
+            padding-top: 30px;
+            .content-region {
+                .glassland {
+                    .content-glassland {
+                        //@include flex-cv($d: column);
+                        width: 100%;
+                        .moderador-content-glassland {
+                            width: 90vw;
+                            .boton-menu {
+                                width: 25%;
+                                height: 45px;
+                                border-radius: 7px;
+                                border-color: cadetblue;
+                                background-color: white;
+                                font-size: 18px;
+                                font-weight: 500;
+                                transition: all 0.5s ease;
+                                position: relative;
+                                margin-bottom: 10px;
+                                margin-top: 10px;
+                                outline: none;
+                            }
+                            .boton-tabla {
+                                width: 6%;
+                                height: 30px;
+                                border-radius: 7px;
+                                border-color: rgb(0, 0, 0);
+                                background-color: rgb(251, 255, 15);
+                                font-size: 14px;
+                                font-weight: 500;
+                                float: left;
+                                transition: all 0.5s ease;
+                                position: relative;
+                                margin: 10px;
+                                outline: none;
+                            }
+                            .boton-volver {
+                                width: 10%;
+                                height: 30px;
+                                border-radius: 7px;
+                                border-color: rgb(0, 0, 0);
+                                background-color: rgb(15, 91, 255);
+                                color: white;
+                                font-size: 14px;
+                                font-weight: 500;
+                                float: right;
+                                transition: all 0.5s ease;
+                                position: relative;
+                                margin: 10px;
+                                outline: none;
+                            }
+                            .tablas {
+                                .table th,
+                                .table td,
+                                .table tr {
+                                    border-top: none !important;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                }
+                                .table th {
+                                    font-weight: bold;
+                                }
+                                .content-tablas {
+                                    .content {
+                                        padding: 50px
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
